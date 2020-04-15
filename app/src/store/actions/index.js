@@ -1,9 +1,19 @@
 import axios from 'axios';
 
-export const FETCH_CHARACTER_START = 'FETCH_CHARACTER_START';
-export const FETCH_CHARACTER_SUCCESS = 'FETCH_CHARACTER_SUCCESS';
-export const FETCH_CHARACTER_FAILURE = 'FETCH_CHARACTER_FAILURE';
+export const FETCH_CHARACTERS_START = 'FETCH_CHARACTERS_START';
+export const FETCH_CHARACTERS_SUCCESS = 'FETCH_CHARACTERS_SUCCESS';
+export const FETCH_CHARACTERS_FAILURE = 'FETCH_CHARACTERS_FAILURE';
 
 export const characterRequest = () => dispatch => {
-    
+    dispatch({ type: FETCH_CHARACTERS_START });
+    axios
+        .get(`https://rickandmortyapi.com/api/character/?name=rick`)
+        .then( response => {
+            // console.log(response.data.results)
+            dispatch({ type: FETCH_CHARACTERS_SUCCESS, payload: response.data.results })
+        })
+        .catch( error => {
+            // console.log('error: ', error)
+            dispatch({ type: FETCH_CHARACTERS_FAILURE, payload: error})
+        })
 }

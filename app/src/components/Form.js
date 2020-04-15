@@ -4,8 +4,9 @@ import { characterRequest } from '../store/actions';
 
 const Form = props => {
     return (
-        <div>
-            
+        <div className='search-input'>
+            <input type='text'></input>
+            <button>Submit</button>
         </div>
     )
 }

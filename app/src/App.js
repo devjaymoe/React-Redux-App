@@ -1,13 +1,15 @@
 import React from 'react';
 import Form from './components/Form';
+import CharacterCards from './components/CharacterCards';
 
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <h1>Rick and Morty!</h1>
+      <h1>Rick and Morty(mostly just rick...)</h1>
       <Form />
+      <CharacterCards />
     </div>
   );
 }
