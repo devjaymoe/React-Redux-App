@@ -1,0 +1,15 @@
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 3% 0;
+    
+    .character-card {
+        background-color: #477385;
+        border-radius: 5px;
+        display: flex;
+        flex-flow: column wrap;
+        width: 300px;
+        margin-top: 2%;
+    }
+}

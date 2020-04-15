@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { characterRequest } from '../store/actions';
 
+import './CharacterCards.scss';
+
 const CharacterCards = props => {
 
     useEffect(() => {
@@ -12,7 +14,7 @@ const CharacterCards = props => {
     // console.log(props.isFetching)
 
     return (
-        <div>
+        <div className='card-container'>
             {props.characters.map(character => (
                 <div className='character-card' key={character.id}>
                 <h3>{character.name}</h3>
