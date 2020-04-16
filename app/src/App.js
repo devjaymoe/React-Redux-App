@@ -7,8 +7,13 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      <h1>Rick and Morty(mostly just rick...)</h1>
-      <Form />
+      <div className='header-container'>
+        <div className='title'>
+          <h1>Rick and Morty Character Info</h1>
+          <p>Search for characters from the rick and morty universe!</p>
+        </div>
+        <Form />
+      </div>
       <CharacterCards />
     </div>
   );

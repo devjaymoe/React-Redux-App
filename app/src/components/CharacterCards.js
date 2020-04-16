@@ -17,14 +17,28 @@ const CharacterCards = props => {
         <div className='card-container'>
             {props.characters.map(character => (
                 <div className='character-card' key={character.id}>
-                <h3>{character.name}</h3>
-                <img src={character.image} alt={character.name} />
-                <p>STATUS {character.status}</p>
-                <p>SPECIES {character.species}</p>
-                <p>GENDER {character.gender}</p>
-                <p>TYPE {character.type}</p>
-                <p>ORIGIN {character.origin.name}</p>
-                <p>LAST LOCATION {character.location.name}</p>
+                    <h3>{character.name}</h3>
+                    <img src={character.image} alt={character.name} />
+                    <div className='info'>
+                        <div>
+                            <p>STATUS</p> <p>{character.status}</p>
+                        </div>
+                        <div>
+                            <p>SPECIES</p> <p>{character.species}</p>
+                        </div>
+                        <div>
+                            <p>GENDER</p> <p>{character.gender}</p>
+                        </div>
+                        <div>
+                            <p>TYPE</p> <p>{character.type}</p>
+                        </div>
+                        <div>
+                            <p>ORIGIN</p> <p>{character.origin.name}</p>
+                        </div>
+                        <div>
+                            <p>LOCATION</p> <p>{character.location.name}</p>
+                        </div>
+                    </div>
                 </div>
             ))}
         </div>

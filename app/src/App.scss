@@ -1,5 +1,16 @@
 .App {
   text-align: center;
-  background-color: #3d373c;
+
+  .header-container{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: space-around;
+
+    p {
+      color: #CC8C62;
+    }
+  }
 }
 

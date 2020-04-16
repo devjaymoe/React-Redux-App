@@ -1,5 +1,15 @@
 const initialState = {
-    characters: [],
+    characters: [{
+        id: 242,
+        name: "Mr. Meeseeks",
+        status: "unknown",
+        species: "Humanoid",
+        type: "Meeseeks",
+        gender: "Male",
+        origin: {name: "Mr. Meeseeks Box", url: "https://rickandmortyapi.com/api/location/53"},
+        location: {name: "Blips and Chitz", url: "https://rickandmortyapi.com/api/location/67"},
+        image: "https://rickandmortyapi.com/api/character/avatar/242.jpeg"
+    }],
     isFetching: false,
     error: ''
 };

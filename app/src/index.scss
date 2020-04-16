@@ -51,6 +51,8 @@ a {
 }
 
 // General Styles
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Baloo+Paaji+2&display=swap');
+
 * {
   box-sizing: border-box;
   max-width: 100%;
@@ -63,16 +65,16 @@ html {
 
 html, body {
   font-family: 'Montserrat', sans-serif;
-  background-color: white;
   color: black;
+  background-color: #2d2c2f;
 }
 
-
 h1, h2, h3, h4, h5 {
-  font-family: 'Oxanium', sans-serif;
+  font-family: 'Anton', sans-serif;
 }
 
 h1 {
+  color: #fcfcfc;
   font-size: 4rem;
 }
 
@@ -89,6 +91,8 @@ h4 {
 }
 
 p {
-  font-size: 1.6rem;
+  font-family: 'Baloo Paaji 2', cursive;
+  color: #bbbcbc;
+  font-size: 1.3rem;
   line-height: 1.4;
 }
