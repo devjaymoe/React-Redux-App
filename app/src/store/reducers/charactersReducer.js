@@ -33,7 +33,7 @@ export const charactersReducer = ( state = initialState, action) => {
             return {
                 ...state,
                 isFetching: false,
-                error: action.payload
+                error: 'Character not found!'
             };
         default:
             return state;

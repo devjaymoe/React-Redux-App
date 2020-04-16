@@ -13,8 +13,6 @@ const Form = props => {
         })
     }
 
-    // console.log(nameInput.name)
-
     const fetchNewCharacter = e => {
         e.preventDefault();
         // console.log(nameInput.name)
@@ -42,8 +40,15 @@ const Form = props => {
                 placeholder='Enter a characer name...'
             />
             <button onClick={fetchNewCharacter}>Submit</button>
+            {props.error && <p className="error">{props.error}</p>}
         </div>
     )
 }
 
-export default connect( null, { characterRequest } )( Form );
+const mapStateToProps = state => {
+    return {
+      error: state.characters.error
+    }
+  }
+
+export default connect( mapStateToProps, { characterRequest } )( Form );

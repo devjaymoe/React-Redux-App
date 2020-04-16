@@ -11,6 +11,8 @@
     p {
       color: #CC8C62;
     }
+    @media (max-width: 800px){
+      height: 30vh
+    }
   }
 }
-
